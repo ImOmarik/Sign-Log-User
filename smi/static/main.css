@@ -1,0 +1,134 @@
+body,main,h1,h2,h3,h4,a,p,img,nav,div,form,input,label,textarea {
+    margin: 0;
+    padding: 0;
+    white-space: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: currentColor;
+    text-decoration: none;
+}
+
+body {
+    background-color: #f0f0c8;
+    nav {
+        width: 100%;
+        height: 75px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        color: white;
+        background-color: #93C572;
+        a {
+            font-size: 25px;
+            display: block;
+        }
+    }
+    #login-form,#register-form {
+        width: 500px;
+        height: 570px;
+        padding: 10px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 70px auto 0;
+        background-color: #93C572;
+        border-radius: 30px;
+        &#login-form {
+            height: 280px;
+            margin-top: 150px;
+        }
+        input {
+            width: 400px;
+            height: 50px;
+            border: 0;
+            background-color: #D1E8A1;
+            margin: 0 auto;
+            border-radius: 18px;
+            font-size: 37px;
+            padding-left: 10px;
+            font-weight: 300;
+            &#register-submit {
+                color: #dff3b5;
+                background-color: #5c9c32;
+                font-size: 24px;
+                font-weight: 500;
+                letter-spacing: 3px;
+                text-transform: uppercase;
+                margin-top: 20px;
+            }
+            &:focus {
+                border: 0;
+                outline: 0;
+                font-size: 37px;
+                font-weight: 300;
+            }
+        }
+        label {
+            margin-left: 55px;
+            color: #f4f4db;
+        }
+    }
+    #home-users{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 100px 30% 0;
+        div {
+            display: flex;
+            flex-direction: column;
+            width: 150px;
+            height: 200px;
+            text-align: center;
+            margin-top: 100px;
+            img {
+                border-radius: 100%;
+            }
+            p {
+                margin-top: 5px;
+                font-weight: 500;
+                font-size: 17px;
+            }
+        }
+    }
+    #user-main,#userupdate-form {
+        text-align: center;
+        h1 {
+            color: #93C572;
+            font-size: 50px;
+            font-weight: 300;
+            border-radius: 15px;
+            margin: 30px auto 50px;
+        }
+        div {
+            display: flex;
+            justify-content: space-between;
+            p {
+                font-size: 40px;
+                font-weight: 300;
+                max-width: 30%;
+                margin-left: 230px;
+            }
+            img {
+                width: 256px;
+                height: 256px;
+                border-radius: 100%;
+                margin-right: 350px;
+            }
+        }
+        input,textarea {
+            font-size: 40px;
+            font-weight: 300;
+            width: 486px;
+            margin-left: 230px;
+            margin-top: 30px;
+            display: block;
+            text-align: left;
+        }
+        textarea {
+            width: 486px;
+            height: 380px;
+            resize: none;
+
+        }
+    }
+}

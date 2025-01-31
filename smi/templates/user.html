@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{{url_for('static',filename='main.css')}}">
+        <title>User</title>
+    </head>
+    <body>
+        <nav>
+            <a href="{{url_for('home')}}">Home</a>
+            <a href="{{url_for('login')}}">Login</a>
+            <a href="{{url_for('register')}}">Register</a>
+            <a href="{{url_for('user')}}">User</a>
+            <a href="{{url_for('userupdate')}}">User Update</a>
+        </nav>
+        <main id="user-main">
+            <h1>
+                {% if users and users|length > 0 %}
+                    {{users[0].username}}
+                {% endif %}
+            </h1>
+            <div>
+                <p>Mən Xırdalan şəhərində anadan olub burada böyümüşəm və hal hazırda burada yaşayıram</p>
+                <img src="../static/user.png" alt="pp">
+            </div>
+        </main>
+    </body>
+</html>
